@@ -249,6 +249,35 @@ ul {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.icon-cross {
+  /* top: 8px;
+  right: 8px; */
+}
+
+.link-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  background-position-x: right;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  transition: var(--fill-animation);
+}
+
+.link-close:hover,
+.link-close:focus {
+  fill: var(--accent-color);
+  cursor: pointer;
+}
+
 .modal b {
   display: block;
   font-family: Roboto;
@@ -262,6 +291,100 @@ ul {
   color: #212121;
 
   padding-top: 40px;
+  margin-bottom: 12px;
+}
+
+.form-field label {
+  display: flex;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.17;
+
+  letter-spacing: 0.01em;
+
+  color: #757575;
+
+  width: 448px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4px;
+}
+.form-field input {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 448px;
+  height: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.form-field {
+  margin-bottom: 10px;
+}
+
+.comment input {
+  text-align: start;
+  padding: 12px 16px;
+
+  height: 120px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.comment input[placeholder] {
+  padding-bottom: 96px;
+}
+
+.comment input:not(:placeholder-shown) {
+  color: #212121;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+.agreement {
+  margin-top: 20px;
+  margin-left: 52px;
+  margin-right: 51px;
+}
+
+.checkbox-label::before {
+  content: "";
+  display: inline-flex;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  border: 2px solid #212121;
+  margin-right: 8.38px;
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.link-label {
+  color: var(--accent-color);
 }
 
 /* section features */
